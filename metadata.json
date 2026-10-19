@@ -1,6 +1,0 @@
-{
-  "name": "YouTube Downloader",
-  "description": "Приложение для быстрого скачивания 360° VR и 4K видео с YouTube с поддержкой очередей и конвертации форматов.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

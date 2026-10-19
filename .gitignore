@@ -1,8 +1,7 @@
-node_modules/
+ffmpeg.exe
+yt-dlp.exe
+release/
 build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+__pycache__/
+*.spec
+*.bak
