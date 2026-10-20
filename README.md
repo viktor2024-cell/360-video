@@ -1,44 +1,58 @@
-# YouTube & 360° VR Downloader v1.2
+# YouTube & 360° VR Downloader
 
 **English** | [Русский](README.ru.md)
 
-The other day I needed a short clip from a YouTube video. I tried a number of free and paid downloaders, but none of them could download just part of a video: every one made me grab the whole thing and cut it afterwards. So I decided to write my own.
+A YouTube video downloader that can grab just the clip you need by timestamp, with no need to download the whole video and trim it afterwards.
 
-Building your own tools with AI has become quite a trend lately — someone even recreated the Adobe suite, with Photoshop and the other apps mimicking the original look and keyboard shortcuts.
+## Why
 
-So here is my contribution to the hype: a video downloader that lets you pick an exact time range.
+Most downloaders fetch the entire video, even if you only need 30 seconds of a two-hour stream. Here you just set the start time and duration, and only that segment is downloaded.
 
 ## Features
 
-- downloads YouTube videos as MP4, MKV, WebM, or audio-only MP3;
-- quality up to 8K, 360° / VR videos supported;
-- **download only a fragment**: set the start and the duration (`1:30`, `90`, `0:01:30`) — only that segment is fetched from YouTube, not the whole video;
-- playlists: load a list, tick the videos you want, and they download one after another;
-- the download card shows the real title, channel, thumbnail, size, speed and progress;
-- MP4 audio is saved as AAC so the file plays in the standard Windows player;
-- a single EXE with no installation, yt-dlp and ffmpeg built in.
+- Formats: MP4, MKV, WebM, or audio-only MP3
+- Quality up to 8K, with 360° and VR video support
+- Clip download: start time + duration
+- Playlists: load a list, check the videos you want, and they download one by one
+- Single EXE file, no installation required
 
-## Getting started
+## How to use
 
-| File | What it does |
-|---|---|
-| `2_BUILD_SINGLE_EXE_v1.2.bat` | Builds one file: `release\YouTube_VR_Downloader_v1.2.exe`. Requires Python ([python.org](https://www.python.org/), tick *Add to PATH*). If there is no `ffmpeg.exe` next to it, the script tries to download it. |
-| `3_RUN_WITH_PYTHON_v1.2.bat` | Runs without building, via Python (pywebview + yt-dlp). Merging and fragments need `ffmpeg.exe` next to the script or in `PATH`. |
-| `1_RUN_INTERFACE_v1.2.bat` | Opens the interface without Python (demo mode: no real downloading). |
-| `4_QUICK_DOWNLOAD_NO_PYTHON.bat` | Console download via `yt-dlp.exe`, no interface. |
+1. Download `YouTube_VR_Downloader_v1.2.exe` from [Releases](../../releases)
+2. Run the program
+3. Paste a video or playlist link
+4. Choose format and quality
+5. Optionally set the clip start time and duration
+6. Click "Download"
 
-The `.cmd` files are identical copies of the `.bat` files. Step-by-step instructions: `INSTRUCTIONS_v1.2.txt`.
+## System requirements
 
-`ffmpeg.exe` is not included in the repository (it exceeds GitHub's 100 MB file limit).
+- Windows 10 or 11 (64-bit) with Microsoft Edge WebView2 Runtime (preinstalled on Windows 11 and up-to-date Windows 10)
 
-The interface is in Russian by default; switch to English with the **RU / EN** toggle in the top-left corner.
+## Screenshots
 
-## Contents
+![Interface](docs/screenshot.png)
 
-- `desktop_app.py` — the app: pywebview window, downloading via yt-dlp, fragment cutting via ffmpeg, playlist loading;
-- `dist/` — the built web interface (React + Tailwind);
-- `server.ps1` — local server for opening the interface without Python;
-- `requirements.txt` — Python dependencies.
+## Building from source
+
+Run `2_BUILD_SINGLE_EXE_v1.2.bat` (requires Python with *Add to PATH*). The result is `release\YouTube_VR_Downloader_v1.2.exe`. Other launch options are described in [`INSTRUCTIONS_v1.2.txt`](INSTRUCTIONS_v1.2.txt).
+
+## Acknowledgements
+
+This program is a graphical front end built on top of these open-source projects:
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) — fetches video information, formats and playlists from YouTube and downloads the streams
+- [FFmpeg](https://ffmpeg.org/) — merges video and audio, cuts clips and converts audio; the EXE bundles an FFmpeg build licensed under the [GPL](https://ffmpeg.org/legal.html)
+- [pywebview](https://github.com/r0x0r/pywebview) — the desktop window around the interface
+- [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/) and [Lucide](https://lucide.dev/) — the interface
+
+## Disclaimer
+
+This tool is intended for downloading content you have the rights to, or for personal use in accordance with YouTube's Terms of Service and the laws of your country.
+
+## License
+
+[MIT](LICENSE) — for the code in this repository. Bundled third-party components (yt-dlp, FFmpeg and others) are distributed under their own licenses.
 
 ## Support
 
