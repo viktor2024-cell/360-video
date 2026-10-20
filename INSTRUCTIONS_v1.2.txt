@@ -1,0 +1,43 @@
+==================================================================
+YouTube & VR Downloader v1.2 — full interface for Windows
+==================================================================
+
+THIS PACKAGE CONTAINS THE COMPLETE v1.2 INTERFACE:
+- Sidebar: Download, History, Playlists, Settings
+- 360° VR spatial support and built-in preview
+- 4K / 8K quality, output folder, download queue
+- Download only a fragment of a video (start + duration)
+
+------------------------------------------------------------------
+RULE #1: UNPACK THE ARCHIVE BEFORE RUNNING ANYTHING!
+------------------------------------------------------------------
+If you run a file from inside the .zip, Windows blocks it and the
+window just flashes and closes.
+1. Right-click the .zip archive.
+2. Choose "Extract all..." and extract it, e.g. to the Desktop.
+3. Open the extracted folder.
+
+------------------------------------------------------------------
+HOW TO RUN:
+------------------------------------------------------------------
+
+1) "1_RUN_INTERFACE_v1.2.bat"
+   - Opens the v1.2 interface right away, no Python required.
+   - Runs in a separate app window on Windows 10 or 11.
+   - Without Python this is a demo: real downloading needs
+     options 2 or 3. If Python with pywebview and yt-dlp is
+     installed, it starts the full app automatically.
+
+2) "2_BUILD_SINGLE_EXE_v1.2.bat"  (RECOMMENDED)
+   - Packs the app and the v1.2 interface into ONE .EXE file:
+     release\YouTube_VR_Downloader_v1.2.exe  (ffmpeg included)
+   - Building requires Python (python.org, tick [x] Add to PATH).
+   - The finished EXE runs on its own, no Python needed.
+
+3) "3_RUN_WITH_PYTHON_v1.2.bat"
+   - Runs the v1.2 interface through Python (pywebview + yt-dlp).
+   - Merging video+audio and cutting fragments need ffmpeg.exe
+     next to the script or in PATH.
+
+4) "4_QUICK_DOWNLOAD_NO_PYTHON.bat"
+   - Quick download in a console window, no graphical interface.

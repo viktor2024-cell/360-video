@@ -27,7 +27,7 @@ So here is my contribution to the hype: a video downloader that lets you pick an
 | `1_RUN_INTERFACE_v1.2.bat` | Opens the interface without Python (demo mode: no real downloading). |
 | `4_QUICK_DOWNLOAD_NO_PYTHON.bat` | Console download via `yt-dlp.exe`, no interface. |
 
-The `.cmd` files are identical copies of the `.bat` files.
+The `.cmd` files are identical copies of the `.bat` files. Step-by-step instructions: `INSTRUCTIONS_v1.2.txt`.
 
 `ffmpeg.exe` is not included in the repository (it exceeds GitHub's 100 MB file limit).
 
