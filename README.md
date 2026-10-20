@@ -1,35 +1,47 @@
 # YouTube & 360° VR Downloader v1.2
 
-На днях мне понадобился кусок видео с YouTube. Посмотрел разные платные и бесплатные программы для скачивания, но ни в одной не нашёл возможности скачать только часть ролика: везде приходилось качать видео целиком, а потом резать. В итоге решил написать свою.
+**English** | [Русский](README.ru.md)
 
-Это сейчас в тренде у многих, кто работает с нейросетями. Дошло даже до полного аналога пакета Adobe: Photoshop и другие программы там просто повторили по внешнему виду интерфейса и горячим клавишам.
+The other day I needed a short clip from a YouTube video. I tried a number of free and paid downloaders, but none of them could download just part of a video: every one made me grab the whole thing and cut it afterwards. So I decided to write my own.
 
-В общем, мой вклад в этот хайп — программа для скачивания видео, в которой можно указать конкретный временной отрезок.
+Building your own tools with AI has become quite a trend lately — someone even recreated the Adobe suite, with Photoshop and the other apps mimicking the original look and keyboard shortcuts.
 
-## Что умеет
+So here is my contribution to the hype: a video downloader that lets you pick an exact time range.
 
-- скачивает видео с YouTube в MP4, MKV, WebM или только звук в MP3;
-- качество до 8K, поддерживаются 360° / VR-ролики;
-- **можно скачать только фрагмент**: указываете начало и длительность (`1:30`, `90`, `0:01:30`); с YouTube забирается только нужный отрезок, а не весь ролик;
-- плейлисты: загружаете список, отмечаете нужные видео, они скачиваются по очереди;
-- в карточке загрузки — реальные название, канал, обложка, размер, скорость и прогресс;
-- звук в MP4 сохраняется в AAC, чтобы файл играл в стандартном плеере Windows;
-- один EXE-файл без установки, внутри yt-dlp и ffmpeg.
+## Features
 
-## Запуск
+- downloads YouTube videos as MP4, MKV, WebM, or audio-only MP3;
+- quality up to 8K, 360° / VR videos supported;
+- **download only a fragment**: set the start and the duration (`1:30`, `90`, `0:01:30`) — only that segment is fetched from YouTube, not the whole video;
+- playlists: load a list, tick the videos you want, and they download one after another;
+- the download card shows the real title, channel, thumbnail, size, speed and progress;
+- MP4 audio is saved as AAC so the file plays in the standard Windows player;
+- a single EXE with no installation, yt-dlp and ffmpeg built in.
 
-| Файл | Что делает |
+## Getting started
+
+The launcher scripts keep their Russian file names:
+
+| File | What it does |
 |---|---|
-| `2_СОБРАТЬ_ОДИН_EXE_v1.2.bat` | Собирает один файл `release\YouTube_VR_Downloader_v1.2.exe`. Нужен Python ([python.org](https://www.python.org/), галочка *Add to PATH*). Если рядом нет `ffmpeg.exe`, скрипт попробует скачать его сам. |
-| `3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat` | Запуск без сборки, через Python (pywebview + yt-dlp). Для склейки и фрагментов нужен `ffmpeg.exe` рядом со скриптом или в `PATH`. |
-| `1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat` | Открывает интерфейс без Python (демо-режим: реального скачивания нет). |
-| `4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat` | Консольное скачивание через `yt-dlp.exe` без интерфейса. |
+| `2_СОБРАТЬ_ОДИН_EXE_v1.2.bat` (*build single EXE*) | Builds one file: `release\YouTube_VR_Downloader_v1.2.exe`. Requires Python ([python.org](https://www.python.org/), tick *Add to PATH*). If there is no `ffmpeg.exe` next to it, the script tries to download it. |
+| `3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat` (*run with Python*) | Runs without building, via Python (pywebview + yt-dlp). Merging and fragments need `ffmpeg.exe` next to the script or in `PATH`. |
+| `1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat` (*open interface*) | Opens the interface without Python (demo mode: no real downloading). |
+| `4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat` (*quick download, no Python*) | Console download via `yt-dlp.exe`, no interface. |
 
-`ffmpeg.exe` в репозиторий не входит (больше лимита GitHub в 100 МБ).
+The `.cmd` files are identical copies of the `.bat` files.
 
-## Состав
+`ffmpeg.exe` is not included in the repository (it exceeds GitHub's 100 MB file limit).
 
-- `desktop_app.py` — приложение: окно pywebview, скачивание через yt-dlp, вырезание фрагментов через ffmpeg, загрузка плейлистов;
-- `dist/` — собранный веб-интерфейс (React + Tailwind);
-- `server.ps1` — локальный сервер для запуска интерфейса без Python;
-- `requirements.txt` — зависимости Python.
+The interface is in Russian by default; switch to English with the **RU / EN** toggle in the top-left corner.
+
+## Contents
+
+- `desktop_app.py` — the app: pywebview window, downloading via yt-dlp, fragment cutting via ffmpeg, playlist loading;
+- `dist/` — the built web interface (React + Tailwind);
+- `server.ps1` — local server for opening the interface without Python;
+- `requirements.txt` — Python dependencies.
+
+## Support
+
+If the app is useful to you, you can support it on [Boosty](https://boosty.to/youtube_vr_downloader/posts/30ce76d3-3900-44d9-8233-456b448dd572).
