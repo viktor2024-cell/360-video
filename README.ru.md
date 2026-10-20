@@ -21,10 +21,10 @@
 
 | Файл | Что делает |
 |---|---|
-| `2_СОБРАТЬ_ОДИН_EXE_v1.2.bat` | Собирает один файл `release\YouTube_VR_Downloader_v1.2.exe`. Нужен Python ([python.org](https://www.python.org/), галочка *Add to PATH*). Если рядом нет `ffmpeg.exe`, скрипт попробует скачать его сам. |
-| `3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat` | Запуск без сборки, через Python (pywebview + yt-dlp). Для склейки и фрагментов нужен `ffmpeg.exe` рядом со скриптом или в `PATH`. |
-| `1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat` | Открывает интерфейс без Python (демо-режим: реального скачивания нет). |
-| `4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat` | Консольное скачивание через `yt-dlp.exe` без интерфейса. |
+| `2_BUILD_SINGLE_EXE_v1.2.bat` | Собирает один файл `release\YouTube_VR_Downloader_v1.2.exe`. Нужен Python ([python.org](https://www.python.org/), галочка *Add to PATH*). Если рядом нет `ffmpeg.exe`, скрипт попробует скачать его сам. |
+| `3_RUN_WITH_PYTHON_v1.2.bat` | Запуск без сборки, через Python (pywebview + yt-dlp). Для склейки и фрагментов нужен `ffmpeg.exe` рядом со скриптом или в `PATH`. |
+| `1_RUN_INTERFACE_v1.2.bat` | Открывает интерфейс без Python (демо-режим: реального скачивания нет). |
+| `4_QUICK_DOWNLOAD_NO_PYTHON.bat` | Консольное скачивание через `yt-dlp.exe` без интерфейса. |
 
 `ffmpeg.exe` в репозиторий не входит (больше лимита GitHub в 100 МБ).
 

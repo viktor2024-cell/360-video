@@ -15515,7 +15515,7 @@ echo.
 echo --------------------------------------------------------------
 echo ЛАЙФХАК: Вам НЕ обязательно собирать .exe, чтобы пользоваться v1.2!
 echo Просто дважды кликните по файлу:
-echo "1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat"
+echo "1_RUN_INTERFACE_v1.2.bat"
 echo Он открывает весь интерфейс v1.2 сразу БЕЗ Python!
 echo --------------------------------------------------------------
 echo.
@@ -15612,7 +15612,7 @@ if not errorlevel 1 (
 )
 
 echo [ОШИБКА] Python не установлен.
-echo Запустите "1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat" для открытия БЕЗ Python!
+echo Запустите "1_RUN_INTERFACE_v1.2.bat" для открытия БЕЗ Python!
 pause
 exit /b 1
 
@@ -15872,7 +15872,7 @@ if ($listener.IsListening) {
         }
     }
 }
-`)), e.file(`1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat`, h(g)), e.file(`1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.cmd`, h(g)), e.file(`2_СОБРАТЬ_ОДИН_EXE_v1.2.bat`, h(_)), e.file(`2_СОБРАТЬ_ОДИН_EXE_v1.2.cmd`, h(_)), e.file(`3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat`, h(v)), e.file(`3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.cmd`, h(v)), e.file(`4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat`, h(y)), e.file(`4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.cmd`, h(y)), e.file(`desktop_app.py`, h(`"""
+`)), e.file(`1_RUN_INTERFACE_v1.2.bat`, h(g)), e.file(`1_RUN_INTERFACE_v1.2.cmd`, h(g)), e.file(`2_BUILD_SINGLE_EXE_v1.2.bat`, h(_)), e.file(`2_BUILD_SINGLE_EXE_v1.2.cmd`, h(_)), e.file(`3_RUN_WITH_PYTHON_v1.2.bat`, h(v)), e.file(`3_RUN_WITH_PYTHON_v1.2.cmd`, h(v)), e.file(`4_QUICK_DOWNLOAD_NO_PYTHON.bat`, h(y)), e.file(`4_QUICK_DOWNLOAD_NO_PYTHON.cmd`, h(y)), e.file(`desktop_app.py`, h(`"""
 YouTube & VR Downloader v1.2 — Desktop App (pywebview + yt-dlp + embedded ffmpeg)
 Упаковывается в ЕДИНЫЙ автономный .EXE файл с помощью PyInstaller.
 
@@ -16203,20 +16203,20 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 ВАРИАНТЫ ЗАПУСКА:
 ------------------------------------------------------------------
 
-1) "1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat" (РЕКОМЕНДУЕТСЯ)
+1) "1_RUN_INTERFACE_v1.2.bat" (РЕКОМЕНДУЕТСЯ)
    - Открывает настоящий красивый интерфейс v1.2 сразу!
    - НЕ ТРЕБУЕТ установки Python.
    - Запускается в отдельном аккуратном окне приложения на любой Windows 10 или 11.
 
-2) "2_СОБРАТЬ_ОДИН_EXE_v1.2.bat"
+2) "2_BUILD_SINGLE_EXE_v1.2.bat"
    - Упаковывает программу и интерфейс v1.2 в ОДИН .EXE файл:
      dist\\YouTube_VR_Downloader_v1.2.exe
    - Для сборки нужен Python (python.org с галочкой [x] Add to PATH).
 
-3) "3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat"
+3) "3_RUN_WITH_PYTHON_v1.2.bat"
    - Запускает интерфейс v1.2 через движок Python (pywebview + yt-dlp).
 
-4) "4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat"
+4) "4_QUICK_DOWNLOAD_NO_PYTHON.bat"
    - Быстрое скачивание через черное окно консоли без графического интерфейса.
 `));
 										let t = await e.generateAsync({ type: `blob` }), n = URL.createObjectURL(t), r = document.createElement(`a`);
@@ -16284,7 +16284,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 											className: `text-slate-300 text-[11.5px] leading-relaxed`,
 											children: [
 												`Файл `,
-												(0, H.jsx)(`b`, { children: `1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat` }),
+												(0, H.jsx)(`b`, { children: `1_RUN_INTERFACE_v1.2.bat` }),
 												` открывает настоящий графический интерфейс v1.2 в режиме отдельного настольного приложения (без лишних вкладок и адресной строки браузера).`
 											]
 										}),
@@ -16292,7 +16292,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 											className: `text-[11px] text-slate-400 flex items-center gap-2`,
 											children: [(0, H.jsx)(`span`, { children: `Файл в архиве:` }), (0, H.jsx)(`code`, {
 												className: `text-blue-300 bg-blue-950/70 px-2 py-0.5 rounded font-mono`,
-												children: `1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat`
+												children: `1_RUN_INTERFACE_v1.2.bat`
 											})]
 										})
 									]
@@ -16301,7 +16301,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 									className: `flex items-center justify-between mb-1.5`,
 									children: [(0, H.jsx)(`span`, {
 										className: `font-semibold text-slate-300 text-xs`,
-										children: `Код запуска v1.2 (1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat):`
+										children: `Код запуска v1.2 (1_RUN_INTERFACE_v1.2.bat):`
 									}), (0, H.jsxs)(`button`, {
 										onClick: () => {
 											navigator.clipboard.writeText(g), u(!0), setTimeout(() => u(!1), 2e3);
@@ -16320,7 +16320,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 										children: `Также доступен запуск через Python:`
 									}), (0, H.jsxs)(`p`, { children: [
 										`Если у вас установлен Python, вы можете запустить `,
-										(0, H.jsx)(`code`, { children: `3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat` }),
+										(0, H.jsx)(`code`, { children: `3_RUN_WITH_PYTHON_v1.2.bat` }),
 										`. Он запускает нативный Python бэкенд на базе `,
 										(0, H.jsx)(`code`, { children: `pywebview` }),
 										`.`
@@ -16341,7 +16341,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 										className: `text-slate-300 text-[11.5px] leading-relaxed`,
 										children: [
 											`Скрипт `,
-											(0, H.jsx)(`b`, { children: `2_СОБРАТЬ_ОДИН_EXE_v1.2.bat` }),
+											(0, H.jsx)(`b`, { children: `2_BUILD_SINGLE_EXE_v1.2.bat` }),
 											` запускает PyInstaller и упаковывает всё (интерфейс v1.2, движок yt-dlp и ffmpeg) в `,
 											(0, H.jsx)(`b`, { children: `один-единственный переносной .EXE файл` }),
 											`.`
@@ -16359,7 +16359,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 								className: `flex items-center justify-between mb-1.5`,
 								children: [(0, H.jsx)(`span`, {
 									className: `font-semibold text-slate-300 text-xs`,
-									children: `Код сборщика (2_СОБРАТЬ_ОДИН_EXE_v1.2.bat):`
+									children: `Код сборщика (2_BUILD_SINGLE_EXE_v1.2.bat):`
 								}), (0, H.jsxs)(`button`, {
 									onClick: () => {
 										navigator.clipboard.writeText(_), c(!0), setTimeout(() => c(!1), 2e3);
@@ -16383,7 +16383,7 @@ YouTube & VR Downloader v1.2 — Полная версия интерфейса 
 									className: `text-slate-300 text-[11.5px] leading-relaxed`,
 									children: [
 										`Файл `,
-										(0, H.jsx)(`b`, { children: `4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat` }),
+										(0, H.jsx)(`b`, { children: `4_QUICK_DOWNLOAD_NO_PYTHON.bat` }),
 										` — это легковесный консольный режим. Он сам скачивает официальный `,
 										(0, H.jsx)(`code`, { children: `yt-dlp.exe` }),
 										` и запрашивает ссылку в терминале.`

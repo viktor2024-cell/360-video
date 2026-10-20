@@ -20,14 +20,12 @@ So here is my contribution to the hype: a video downloader that lets you pick an
 
 ## Getting started
 
-The launcher scripts keep their Russian file names:
-
 | File | What it does |
 |---|---|
-| `2_СОБРАТЬ_ОДИН_EXE_v1.2.bat` (*build single EXE*) | Builds one file: `release\YouTube_VR_Downloader_v1.2.exe`. Requires Python ([python.org](https://www.python.org/), tick *Add to PATH*). If there is no `ffmpeg.exe` next to it, the script tries to download it. |
-| `3_ЗАПУСТИТЬ_ЧЕРЕЗ_PYTHON_v1.2.bat` (*run with Python*) | Runs without building, via Python (pywebview + yt-dlp). Merging and fragments need `ffmpeg.exe` next to the script or in `PATH`. |
-| `1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat` (*open interface*) | Opens the interface without Python (demo mode: no real downloading). |
-| `4_СКАЧАТЬ_БЫСТРО_БЕЗ_PYTHON.bat` (*quick download, no Python*) | Console download via `yt-dlp.exe`, no interface. |
+| `2_BUILD_SINGLE_EXE_v1.2.bat` | Builds one file: `release\YouTube_VR_Downloader_v1.2.exe`. Requires Python ([python.org](https://www.python.org/), tick *Add to PATH*). If there is no `ffmpeg.exe` next to it, the script tries to download it. |
+| `3_RUN_WITH_PYTHON_v1.2.bat` | Runs without building, via Python (pywebview + yt-dlp). Merging and fragments need `ffmpeg.exe` next to the script or in `PATH`. |
+| `1_RUN_INTERFACE_v1.2.bat` | Opens the interface without Python (demo mode: no real downloading). |
+| `4_QUICK_DOWNLOAD_NO_PYTHON.bat` | Console download via `yt-dlp.exe`, no interface. |
 
 The `.cmd` files are identical copies of the `.bat` files.
 

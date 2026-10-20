@@ -24,7 +24,7 @@ if not errorlevel 1 (
 )
 
 echo [ОШИБКА] Python не установлен.
-echo Запустите "1_ЗАПУСТИТЬ_ИНТЕРФЕЙС_v1.2.bat" для открытия БЕЗ Python!
+echo Запустите "1_RUN_INTERFACE_v1.2.bat" для открытия БЕЗ Python!
 pause
 exit /b 1
 
